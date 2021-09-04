@@ -59,8 +59,11 @@ GridSearch를 적용한 결과 Max_Length=300, Epoch=5, Batch_Size=16일 때의 
 
 ### 코드 파일 설명
  **requirements.txt**: 학습에 필요한 모듈 관련 파일
+ 
  **01_data_preprocessing.ipynb**: Token 삽입 및 인코딩하는 쥬피터 노트북
+ 
  **02_model_training.ipynb**: 모델 학습 쥬피터 노트북
+ 
  **03_generation_inference.ipynb**: 레시피 생성 및 하이퍼파라미터 출력 쥬피터 노트북 
  
  
