@@ -15,13 +15,13 @@
 
 <p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/model%20structure.png?raw=true width = 800></p>
 
-#### Input
+### Input
 > [해먹남녀](https://haemukja.com/), [만개의레시피](https://www.10000recipe.com/), [공공API](https://www.data.go.kr/), [메뉴판](https://www.menupan.com/)의 웹사이트에서 파이썬 모듈 beautifulsoup과 selenium을 이용하여 스크래핑한 식재료와 레시피 데이터를 전처리하여 모델에 넣어준다.
 
 **데이터 전처리**
 > 수집한 데이터에서 유의미한 단어만 선별하기 위하여 큰 의미가 없는 불용어를 제거하였다. 반복적으로 등장하는 불필요한 인삿말, 특수문자, url 등을 제거하여 꼭 필요한 부분만 남겼다. 또한 한국어 맞춤법을 교정하는 py-hanspell 모듈을 사용하여 각 레시피의 조리 순서의 맞춤법을 교정하였다. 마지막으로 레시피 조리 순서 문장의 띄어쓰기 교정을 위한 PyKoSpacing 모듈을 이용하였다.
 
-#### [KoGPT2](https://github.com/SKT-AI/KoGPT2) 모델
+### [KoGPT2](https://github.com/SKT-AI/KoGPT2) 모델
 > GPT-2는 머신러닝 알고리즘을 활용해 입력된 샘플 텍스트를 구문론적, 문법적 정보 등의 일관성을 갖춘 텍스트로 생성하는 자연어 처리 모델이다. 한국어로 학습된 오픈소스 기반 GPT-2 모델인 KoGPT-2는 질문에 대한 응답 생성, 문장 완성, 챗봇 등 한국어 해석이 필요한 여러 애플리케이션의 머신러닝 성능을 향상시킬 수 있다.
 
 <p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/KoGPT2%20%EB%A0%88%EC%8B%9C%ED%94%BC%20%EA%B2%80%EC%A6%9D%20%EA%B3%BC%EC%A0%95.png?raw=true width = 800></p>
@@ -37,7 +37,7 @@
 **2. 디코딩 과정**
 > 디코더의 경우 문장 생성과 더 직접적인 연관을 가진 평가 기준을 도입했다. 구체적으로, 생성된 레시피의 형태소를 분리하여 안에 포함된 식재료들이 입력값의 식재료와 얼마나 일치하는지 평가하고, 기존의 레시피와 얼마나 유사한지를 평가하였다. 이를 위해 F1 점수와 BLEU 점수를 적용했다.
 
-**학습 과정**
+### **학습 과정**
 > 인코딩된 레시피는 워드 임베딩, 포지셔널 인코딩(positional encoding)을 차례대로 거친 뒤 훈련한다. 타겟을 한 칸씩 옮겨가며 다음 단어를 추정하는데 배치 사이즈(batch size)만큼의 레시피로 결과값을 도출해내고 추정한 단어와 실제 단어를 비교해 손실을 구하게 된다. 마지막으로 Adam optimizer를 통해 모수의 값을 조정하며 학습이 진행된다.
 
 
@@ -49,7 +49,7 @@
 
 GridSearch를 적용한 결과 Max_Length=300, Epoch=5, Batch_Size=16일 때의 성능이 가장 좋았다.
 
-#### 모델 예시 
+### 모델 예시 
 
 <p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/Result.png?raw=true width = 800></p>
 
@@ -69,6 +69,4 @@ GridSearch를 적용한 결과 Max_Length=300, Epoch=5, Batch_Size=16일 때의 
 [7] 메뉴팟닷컴, https://www.menupan.com/
 
 
-```ratsnlp를 활용하여 
-
-자연어 처리 실습을 위한 패키지입니다. 구글 코랩(colab) 환경에서 동작할 수 있도록 작성하였습니다.
+```ratsnlp를 활용하여 자연어 처리 실습을 위한 패키지입니다. 구글 코랩(colab) 환경에서 동작할 수 있도록 작성하였습니다.
