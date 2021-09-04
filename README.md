@@ -61,11 +61,17 @@ GridSearch를 적용한 결과 Max_Length=300, Epoch=5, Batch_Size=16일 때의 
 
 ### 참조 문헌
 [1] RecipiGPT, https://recipegpt.org/
+
 [2] KoGPT2, https://github.com/SKT-AI/KoGPT2
+
 [3] Ratsgo NLPBOOK, https://ratsgo.github.io/nlpbook/docs/generation/inference1/
+
 [4] 해먹남녀, https://haemukja.com/
+
 [5] 만개의레시피, https://www.10000recipe.com/
+
 [6] 공공데이터포털, https://www.data.go.kr/
+
 [7] 메뉴팟닷컴, https://www.menupan.com/
 
 
