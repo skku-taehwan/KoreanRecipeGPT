@@ -1,6 +1,6 @@
 # KoreanRecipeGPT
 안녕하세요, 성균관대학교 부추삼겹팀입니다.
-
+![부추삼겹팀](https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/team%20introduction.png?raw=true)
 
 
 > 식재료명과 음식명을 Input으로 넣어주면, 그 음식에 대한 레시피가 Output으로 나오는 모델입니다.
