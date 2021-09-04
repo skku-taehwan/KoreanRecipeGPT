@@ -16,7 +16,7 @@
 <p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/model%20structure.png?raw=true width = 800></p>
 
 #### Input
-- [해먹남녀](https://haemukja.com/), [만개의레시피](https://www.10000recipe.com/), [공공API](https://www.data.go.kr/), [메뉴판](https://www.menupan.com/)의 웹사이트에서 파이썬 모듈 beautifulsoup과 selenium을 이용하여 스크래핑한 식재료와 레시피 데이터를 전처리하여 모델에 넣어준다.
+> [해먹남녀](https://haemukja.com/), [만개의레시피](https://www.10000recipe.com/), [공공API](https://www.data.go.kr/), [메뉴판](https://www.menupan.com/)의 웹사이트에서 파이썬 모듈 beautifulsoup과 selenium을 이용하여 스크래핑한 식재료와 레시피 데이터를 전처리하여 모델에 넣어준다.
 
 **데이터 전처리**
 > 수집한 데이터에서 유의미한 단어만 선별하기 위하여 큰 의미가 없는 불용어를 제거하였다. 반복적으로 등장하는 불필요한 인삿말, 특수문자, url 등을 제거하여 꼭 필요한 부분만 남겼다. 또한 한국어 맞춤법을 교정하는 py-hanspell 모듈을 사용하여 각 레시피의 조리 순서의 맞춤법을 교정하였다. 마지막으로 레시피 조리 순서 문장의 띄어쓰기 교정을 위한 PyKoSpacing 모듈을 이용하였다.
