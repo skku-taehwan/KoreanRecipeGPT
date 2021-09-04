@@ -5,7 +5,7 @@
 
 ### 개요
 <p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/Project%20intro.png?raw=true width = 800></p>
-
+ 
 
 > 저희 부추삼겹팀은 **‘냉장고를 부탁해’** 프로젝트를 통해 냉장고 속에 남은 음식들을 버리지 않고, 최대한 활용하고자 했다. 모델에 조리하고 싶은 식재료들과 음식명을 입력(input)하면, 입력된 재료들을 활용한 레시피를 출력(output)으로 생성하여 사용자에게 제공하는 것이 본 프로젝트의 목표이다. 앞서 언급한 식재료 기반의 레시피 생성(recipe-generation) 태스크를 수행하기 위해서는 식재료와 음식별 조리 방법에 대한 데이터를 수집해야 한다.
 > 
