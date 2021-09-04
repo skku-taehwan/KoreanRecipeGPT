@@ -1,7 +1,5 @@
 # KoreanRecipeGPT
 > 안녕하세요, 성균관대학교에서 인공지능과 NLP를 공부하는 학생들로 이루어진 부추삼겹팀입니다. 저희는 자연어처리를 활용한 프로젝트를 계획 중에 냉장고 속 남은 재료를 어떻게 활용할 지 고민하다 본 프로젝트를 고안하게 되었습니다. 
-<p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/team%20introduction.png?raw=true width = 1000></p>
-
 
 ### 개요
 <p align = "center"> <img src = https://github.com/skku-taehwan/KoreanRecipeGPT/blob/main/teamphoto/Project%20intro.png?raw=true width = 800></p>
