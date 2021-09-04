@@ -1,6 +1,7 @@
 # KoreanRecipeGPT
 
 > 식재료명과 음식명을 Input으로 넣어주면, 그 음식에 대한 레시피가 Output으로 나오는 모델입니다.
+> 본 모델은 [!Ratsgo NLPBOOK](https://ratsgo.github.io/nlpbook/docs/generation/inference1/)을 참고하였습니다.
 
 
 ```ratsnlp를 활용하여 
